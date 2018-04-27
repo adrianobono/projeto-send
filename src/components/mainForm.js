@@ -47,10 +47,7 @@ class MainForm extends Component {
                 
             </form>
 
-
         )
-
-
 
     }
 

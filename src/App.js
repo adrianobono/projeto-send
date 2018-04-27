@@ -97,7 +97,7 @@ class App extends Component {
       <div className="row p-2" key={index} style={{ display: this.state.view4 }} >
 
         <div className="col-md-5 float-left">
-          <li style={pd1} onClick={(e) => { if (this.props.contacts[this.state.getId].msgs.length > 0) this.setState({ view5: 'block' });  this.setState({ view6: 'none' });this.setState({ view4: 'none' }); this.setState({ data3: this.props.contacts[index].email }); this.setState({ data4: this.props.contacts[index].tel }); this.setState({ data1: this.props.contacts[index].nome }); this.setState({ data2: this.props.contacts[index].snome }); this.setState({ getId: index }); this.setState({ view2: 'none' }); this.setState({ view3: 'none' }); this.setState({ view1: 'block' }) }} className="list-group-item clearfix">
+          <li style={pd1} onClick={(e) => { if (this.props.contacts[this.state.getId].msgs.length > 0) this.setState({ view5: 'block' }); this.setState({ view6: 'none' }); this.setState({ view4: 'none' }); this.setState({ data3: this.props.contacts[index].email }); this.setState({ data4: this.props.contacts[index].tel }); this.setState({ data1: this.props.contacts[index].nome }); this.setState({ data2: this.props.contacts[index].snome }); this.setState({ getId: index }); this.setState({ view2: 'none' }); this.setState({ view3: 'none' }); this.setState({ view1: 'block' }) }} className="list-group-item clearfix">
             {data.nome + ' ' + data.snome}
           </li>
         </div>
@@ -122,7 +122,7 @@ class App extends Component {
           console.log(msg)
           return (
 
-            <div  key={i} >
+            <div key={i} >
               <br />
               <div className="float-left p-1">
                 <li className="list-group-item p-1">
@@ -160,7 +160,7 @@ class App extends Component {
             Inserir Contato
         </button>
           <MainForm display={this.state.view2} handleChange={this.handleChange} handleSubmit={this.handleSubmit} btnCancel={() => { this.setState({ view2: 'none', view3: 'block' }) }} />
-                 <hr />
+          <hr />
           <h5 className="col-md-12 ml-0" style={{ display: this.state.view6 }} >Lista de Contatos:</h5>
           <br />
           <div style={{ display: this.state.view1 }}>
@@ -190,7 +190,7 @@ class App extends Component {
 
 
               <div className="mt-5" id="mensagens">
-              <l5> Mensagens: </l5>
+                <l5> Mensagens: </l5>
 
                 {<ul className="list-group" >
                   {
@@ -278,9 +278,9 @@ const viewer = {
   height: 320 + 'px',
   display: 'block-inline',
   float: 'left',
-  borderStyle:'solid',
-  borderColor:'#eee',
-  borderWidth:'2px 0px 2px 2px'
+  borderStyle: 'solid',
+  borderColor: '#eee',
+  borderWidth: '2px 0px 2px 2px'
 
 }
 
