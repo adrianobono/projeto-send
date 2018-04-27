@@ -29,7 +29,7 @@ class MainForm extends Component {
                     <input id="email" style={pd1} name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required onChange={this.props.handleChange} className="col-sm-5 form-control-sm" value={this.props.email} /><br />
 
                     <label className="col-md-2">Telefone:</label>
-                    <input id="tel" style={pd1} name="tel" patter="/^\d+$/" required type="tel" maxLength="15" type="text" onChange={this.props.handleChange} className="col-sm-5 form-control-sm" value={this.props.tel} /><br />
+                    <input id="tel" style={pd1} name="tel"  maxLength="15"  type="text" required onChange={this.props.handleChange} className="col-sm-5 form-control-sm" value={this.props.tel} /><br />
 
                 </span>
                 <br />
@@ -44,8 +44,7 @@ class MainForm extends Component {
                     </span >
 
                 </span>
-                <hr />
-                <h5 className="col-md-12" >Lista de Contatos:</h5>
+                
             </form>
 
 
